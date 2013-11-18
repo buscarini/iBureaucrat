@@ -44,4 +44,6 @@
 
 - (void)setScrollable:(BOOL)isScrollable;
 
+- (void) selectFirstField;
+
 @end

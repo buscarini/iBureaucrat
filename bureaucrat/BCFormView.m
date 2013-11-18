@@ -389,4 +389,9 @@
     return [self rectWithOrientation:orientation].size;
 }
 
+- (void) selectFirstField {
+	[self selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+}
+
+
 @end
