@@ -12,9 +12,9 @@
 @class BCTextViewCell;
 @class BCFormSection;
 
-@interface BCTextViewField : BCAbstractField <UITextViewDelegate>
+@interface BCTextViewField : BCAbstractField <UITextViewDelegate,UITextFieldDelegate>
 
-@property(nonatomic, strong, readonly) UITextView* textView;
+@property(nonatomic, weak, readonly) UITextView* textView;
 
 - (void)setValue:(NSString*)value;
 

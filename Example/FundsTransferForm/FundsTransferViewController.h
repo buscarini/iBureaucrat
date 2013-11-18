@@ -18,6 +18,7 @@
 @class BCForm;
 @class BCPasswordField;
 @class BCMultiLineTextField;
+@class BCTextViewField;
 
 @interface FundsTransferViewController : UIViewController<BCFormDelegate>
 {
@@ -25,7 +26,7 @@
 }
 
 @property (nonatomic, strong, readonly) BCPickerField* sendBy;
-@property (nonatomic, strong, readonly) BCMultiLineTextField* notes;
+@property (nonatomic, strong, readonly) BCTextViewField* notes;
 
 @property (nonatomic, strong, readonly) BCTextField* amountToSend;
 @property (nonatomic, strong, readonly) BCPickerField* currency;

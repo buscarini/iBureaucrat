@@ -18,10 +18,13 @@
 
 @interface BCTextViewCell : BCAbstractCell
 {
+	UITextField *_textField;
     UITextView* _textView;
 }
 
 @property (nonatomic) BOOL editable;
 @property (nonatomic, strong, readonly) UITextView* textView;
+@property (nonatomic, strong, readonly) UITextField *textField;
+
 
 @end

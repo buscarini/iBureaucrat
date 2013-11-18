@@ -14,6 +14,7 @@
 #import "BCFormView.h"
 #import "UITextView+AbstractFormCell.h"
 #import "BCForm.h"
+#import "UITextField+AbstractFormCell.h"
 
 @implementation BCTextViewField
 
@@ -36,6 +37,11 @@
     cell.textView.formCell = cell;
     cell.label.textColor = [UIColor redColor];
 	
+	cell.textField.delegate = self;
+	cell.textField.returnKeyType = UIReturnKeyDefault;
+    cell.textField.delegate = self;
+    cell.textField.formCell = cell;
+
 	
     if(self.label == nil){
 		cell.labelHidden = YES;
@@ -62,6 +68,11 @@
 - (void)formCellWasFocused:(BCAbstractCell*)cell
 {
     [super formCellWasFocused:cell];
+	
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[self.cell.textField resignFirstResponder];
+		[self.textView becomeFirstResponder];
+	});
 }
 
 /* ====================================================================================================================================== */
@@ -69,14 +80,15 @@
 
 - (void)textFieldDidBeginEditing:(UITextField*)textField
 {
-    [self.section.parent.view textFieldDidBeginEditing:textField];
+	[self.section.parent.view textFieldDidBeginEditing:self.cell.textField];
+//	[self.textView becomeFirstResponder];
 }
 
 - (void)textFieldDidEndEditing:(UITextField*)textField
 {
-    [self.section.parent.view textFieldDidEndEditing:textField];
+	[self.section.parent.view textFieldDidEndEditing:self.cell.textField];
+//	[self.textView resignFirstResponder];
 }
-
 #pragma mark <UITextViewDelegate>
 
 - (void) textViewDidBeginEditing:(UITextView *)textView {
