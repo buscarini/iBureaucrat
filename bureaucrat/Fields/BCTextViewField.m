@@ -65,6 +65,18 @@
 }
 
 /* ====================================================================================================================================== */
+#pragma mark <UITextFieldDelegate>
+
+- (void)textFieldDidBeginEditing:(UITextField*)textField
+{
+    [self.section.parent.view textFieldDidBeginEditing:textField];
+}
+
+- (void)textFieldDidEndEditing:(UITextField*)textField
+{
+    [self.section.parent.view textFieldDidEndEditing:textField];
+}
+
 #pragma mark <UITextViewDelegate>
 
 - (void) textViewDidBeginEditing:(UITextView *)textView {
