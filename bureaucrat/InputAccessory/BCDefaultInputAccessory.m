@@ -38,10 +38,10 @@
         [self setBarStyle:UIBarStyleBlackOpaque];
 
         _previousButton = [[UIBarButtonItem alloc]
-                initWithTitle:@"Prev" style:UIBarButtonItemStyleBordered target:self action:@selector(previousPressed)];
+                initWithTitle:NSLocalizedString(@"Prev",@"keyboard accessory") style:UIBarButtonItemStyleBordered target:self action:@selector(previousPressed)];
 
         _nextButton = [[UIBarButtonItem alloc]
-                initWithTitle:@"Next" style:UIBarButtonItemStyleBordered target:self action:@selector(nextPressed)];
+                initWithTitle:NSLocalizedString(@"Next",@"keyboard accessory") style:UIBarButtonItemStyleBordered target:self action:@selector(nextPressed)];
 
         UIBarButtonItem* flexibleSpaceLeft =
                 [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
