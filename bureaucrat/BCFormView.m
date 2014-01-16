@@ -59,6 +59,7 @@
     NSLog(@"Using form: %@", form);
     [_formNavigationAccessory.doneButton setTintColor:_form.colorScheme.buttonTintColor];
     [_formNavigationAccessory.nextButton setTintColor:_form.colorScheme.buttonTintColor];
+	[_formNavigationAccessory.previousButton setTintColor:_form.colorScheme.buttonTintColor];
     [_tableView setSeparatorColor:_form.colorScheme.separatorColor];
 }
 
