@@ -22,7 +22,7 @@
 
 + (BCDefaultInputAccessory*)viewWithDelegate:(id<BCInputAccessoryDelegate>)delegate;
 {
-    BCDefaultInputAccessory* view = [[[self class] alloc] initWithFrame:CGRectMake(0.0, 0.0, 310.0, 40.0)];
+    BCDefaultInputAccessory* view = [[[self class] alloc] initWithFrame:CGRectMake(0.0, 0.0, 310.0, 44.0)];
     [view setAccessoryViewDelegate:delegate];
     return view;
 }
@@ -49,6 +49,8 @@
         _doneButton =
                 [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(donePressed)];
         _doneButton.tintColor = [UIColor colorWithRed:0.639 green:0.831 blue:0.486 alpha:1.0];
+
+		_nextButton.tintColor = _doneButton.tintColor;
 
         [self setItems:@[_previousButton, _nextButton, flexibleSpaceLeft, _doneButton]];
     }
