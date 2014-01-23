@@ -20,7 +20,6 @@
 @interface BCPickerField : BCAbstractField <UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate>
 {
     UIPickerView* _pickerView;
-    NSMutableArray* _options;
     BOOL _hasValue;
 }
 
@@ -28,6 +27,8 @@
 * The field used to display an option value - must return an NSString. If this value is nil, 'description' will be used.
 */
 @property (nonatomic) SEL displayField;
+
+@property (nonatomic, strong) NSMutableArray *options;
 
 - (BCTextFieldCell*)cell;
 
@@ -39,11 +40,11 @@
 /**
 * Adds options.
 */
-- (void)addOptions:(NSArray*)options;
+- (void)addOptions:(NSMutableArray*)options;
 
 /**
 * Sets options to the contents of the supplied array (erasing any previous options).
 */
-- (void)setOptions:(NSArray*)options;
+- (void)setOptions:(NSMutableArray*)options;
 
 @end
