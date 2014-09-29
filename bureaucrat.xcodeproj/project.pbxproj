@@ -448,6 +448,7 @@
 		6BD31AC4170C189A007BAF4F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0600;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = com.jasperblues;
 			};

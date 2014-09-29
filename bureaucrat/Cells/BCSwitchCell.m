@@ -18,7 +18,7 @@
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString*)reuseIdentifier
 {
-#warning This class is work in progress
+//#warning This class is work in progress
 	
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self)

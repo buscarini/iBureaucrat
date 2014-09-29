@@ -36,7 +36,7 @@
 
 - (NSString*)textValue
 {
-#warning Implement this!
+//#warning Implement this!
     return self.cell.textField.text;
 }
 
