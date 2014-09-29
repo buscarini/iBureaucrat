@@ -53,6 +53,7 @@
 		AC14CF031887DDB600FE99B7 /* BCSwitchField.m in Sources */ = {isa = PBXBuildFile; fileRef = AC14CF021887DDB600FE99B7 /* BCSwitchField.m */; };
 		ACA33546183679AF00963225 /* BCTextViewField.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA33545183679AF00963225 /* BCTextViewField.m */; };
 		ACA3354918367A1800963225 /* UITextView+AbstractFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA3354818367A1800963225 /* UITextView+AbstractFormCell.m */; };
+		ACD1A97618925DDA0000C377 /* BCDatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD1A97518925DDA0000C377 /* BCDatePickerCell.m */; };
 		BA79800FE4605A01EF2F9612 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA798F030395FE3D91979212 /* Default@2x.png */; };
 		BA7980E45F032666A2719FD8 /* FundsTransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA79801171376769C364AEA7 /* FundsTransferViewController.m */; };
 		BA7983198A6E2880002DE087 /* FundsTransferView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7981E96002FCA868F2CD79 /* FundsTransferView.m */; };
@@ -147,6 +148,8 @@
 		ACA33545183679AF00963225 /* BCTextViewField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTextViewField.m; sourceTree = "<group>"; };
 		ACA3354718367A1800963225 /* UITextView+AbstractFormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+AbstractFormCell.h"; sourceTree = "<group>"; };
 		ACA3354818367A1800963225 /* UITextView+AbstractFormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+AbstractFormCell.m"; sourceTree = "<group>"; };
+		ACD1A97418925DDA0000C377 /* BCDatePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCDatePickerCell.h; sourceTree = "<group>"; };
+		ACD1A97518925DDA0000C377 /* BCDatePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCDatePickerCell.m; sourceTree = "<group>"; };
 		BA79801171376769C364AEA7 /* FundsTransferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundsTransferViewController.m; sourceTree = "<group>"; };
 		BA798084CD9772FBF7B47167 /* BCColorScheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCColorScheme.m; sourceTree = "<group>"; };
 		BA7980CA271AEB51B8380BF6 /* BCMultiLineTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMultiLineTextField.h; sourceTree = "<group>"; };
@@ -219,6 +222,8 @@
 				6B008FE0170C244A00DB737B /* BCPasswordCell.m */,
 				6B008FE1170C244A00DB737B /* BCTextFieldCell.h */,
 				6B008FE2170C244A00DB737B /* BCTextFieldCell.m */,
+				ACD1A97418925DDA0000C377 /* BCDatePickerCell.h */,
+				ACD1A97518925DDA0000C377 /* BCDatePickerCell.m */,
 				BA7983B2C46A0058589AE5C9 /* BCTextViewCell.h */,
 				BA798399F8AD9588D26D3A31 /* BCTextViewCell.m */,
 				AC14CEFE1887DBCE00FE99B7 /* BCSwitchCell.h */,
@@ -588,6 +593,7 @@
 				6B008FFA170C244A00DB737B /* BCAbstractCell.m in Sources */,
 				AC14CF001887DBCE00FE99B7 /* BCSwitchCell.m in Sources */,
 				6B008FFC170C244A00DB737B /* BCPasswordCell.m in Sources */,
+				ACD1A97618925DDA0000C377 /* BCDatePickerCell.m in Sources */,
 				6B008FFE170C244A00DB737B /* BCTextFieldCell.m in Sources */,
 				6B009000170C244A00DB737B /* BCAbstractField.m in Sources */,
 				6B009002170C244A00DB737B /* BCPasswordField.m in Sources */,
